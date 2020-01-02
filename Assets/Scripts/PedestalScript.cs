@@ -30,7 +30,7 @@ public class PedestalScript : MonoBehaviour
             //Debug.Log("Orb!");
             foreach (PuzzlePartScript activated in puzzleParts)
             {
-                activated.Activate(other.name);
+                activated.Activate(other.GetComponent<OrbScript>().orbColorInt);
             }
         }
         else
